@@ -1,3 +1,4 @@
+findType,findWhat,changeTo,caseSensitive,wholeWord,enabled,comments
 grep,/\s+$/g,,FALSE,FALSE,TRUE,remove trailing whitespace
 grep,/^\s+/g,,FALSE,FALSE,TRUE,remove leading whitespace
 grep,/([A-Z]\.)\s([A-Z]\.)/g,$1$2,FALSE,TRUE,TRUE,remove space between initials
