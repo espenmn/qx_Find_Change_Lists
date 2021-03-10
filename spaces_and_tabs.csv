@@ -1,0 +1,10 @@
+grep,/\s+$/g,,FALSE,FALSE,TRUE,remove trailing whitespace
+grep,/^\s+/g,,FALSE,FALSE,TRUE,remove leading whitespace
+grep,/([A-Z]\.)\s([A-Z]\.)/g,$1$2,FALSE,TRUE,TRUE,remove space between initials
+grep,/([A-Z]\.)([A-Z]\.)/g,$1 $2,FALSE,TRUE,TRUE,add space between initials
+grep,/(?<=\d)\s(kg|mg|km|mm|cm)/g,&nbsp;$1,FALSE,FALSE,TRUE,convert space between digit and kg|mg|km|mm|cm to non-breaking space
+grep,/\s+/g, ,FALSE,TRUE,TRUE,multiple (regular) spaces => one space
+grep,/(&hTab;)+/g,&hTab;,FALSE,TRUE,TRUE,multiple tabs => one tab
+grep,/\s*((&hTab;)+\s*)+/g,&hTab;,FALSE,TRUE,TRUE,tab(s) + space(s) => one tab
+grep,/\s(?=\x21|\x29|\x2C|\x2E|\x3A|\x3B|\x3F|\x5D|\x7D)/g,,FALSE,TRUE,TRUE,remove space before punctuation and closing brackets
+grep,/(?<=\s[A-Za-zÀ-ÖØ-öø-ɏḀ-ỿ])\s/g,&nbsp;,FALSE,TRUE,TRUE,space after single-letter words => non-breaking space
