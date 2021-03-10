@@ -1,0 +1,7 @@
+findType,findWhat,changeTo,caseSensitive,wholeWord,enabled,comments
+text,  , ,FALSE,FALSE,FALSE,Find all double spaces and replace with a single space.
+text, :,:,FALSE,FALSE,TRUE,Find all space-colon and replace with a colon.
+text, ?,?,FALSE,FALSE,TRUE,Find all space-question mark and replace with a question mark.
+text, !,!,FALSE,FALSE,TRUE,Find all space-exclamatory sign and replace with an exclamatory sign.
+text, =,=,FALSE,FALSE,FALSE,Find all space-equals to and replace with an equals to sign.
+text, .,.,FALSE,FALSE,TRUE,Find all space-full stop and replace with a full stop.
