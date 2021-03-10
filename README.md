@@ -19,4 +19,4 @@ Fixes the following (just need to make it first):
 
 - space - space ( - ) => en-dash ( – )
 - nummber-number ([0-9]-[0-9]) => number-en-dash-number ([0-9]–[0-9])
-- - text (starts with -) => – text (starts with –)
+- \- text (starts with -) => – text (starts with –)
